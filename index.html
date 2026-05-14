@@ -4,8 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Doryonix | Power & Project Solution</title>
+  <!-- SEO & Social Preview -->
+<meta name="description" content="Doryonix – ניהול פרויקטי אנרגיה, חשמל ועמדות טעינה לרכב חשמלי מקצה לקצה. תיאום קבלנים, ליווי מול חברת חשמל, ניהול תקציב, פיקוח וביצוע.">
+
+<meta name="keywords" content="Doryonix, דוריוןיקס, ניהול פרויקטים, עמדות טעינה, טעינה לרכב חשמלי, פרויקטי אנרגיה, חשמל, חברת חשמל, EV charging, project management">
+
+<meta name="author" content="Doryonix">
+
+<meta property="og:title" content="Doryonix | Power & Project Solution">
+<meta property="og:description" content="ניהול פרויקטי אנרגיה, חשמל ועמדות טעינה לרכב חשמלי מקצה לקצה.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.doryonix.com">
+<meta property="og:image" content="https://www.doryonix.com/TabLogo.png">
+  
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Doryonix | Power & Project Solution">
+<meta name="twitter:description" content="ניהול פרויקטי אנרגיה, חשמל ועמדות טעינה לרכב חשמלי מקצה לקצה.">
+<meta name="twitter:image" content="https://www.doryonix.com/favicon.png">
+
   <link rel="icon" type="image/png" href="TabLogo.png">
-  <meta name="description" content="Doryonix – מומחה לניהול פרויקטים בתחום האנרגיה הירוקה, עמדות טעינה לרכב חשמלי, אינטגרציה בין קבלנים וליווי מול חברת חשמל">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
@@ -438,9 +455,9 @@
     <h2 class="section-title" data-he="מה כולל פרויקט רחב היקף" data-en="What a Large-Scale Project Includes">מה כולל פרויקט רחב היקף</h2>
     <p class="section-desc" style="margin-bottom:2rem" data-he="כל סוג פרויקט מגיע עם אתגרים ייחודיים. הנה פירוט של הסוגים העיקריים שאנו מנהלים ומה כרוך בכל אחד." data-en="Each project type comes with unique challenges. Here's a breakdown of the main types we manage and what each involves.">כל סוג פרויקט מגיע עם אתגרים ייחודיים. הנה פירוט של הסוגים העיקריים שאנו מנהלים ומה כרוך בכל אחד.</p>
     <div class="projects-tabs">
-      <button class="tab-btn active" onclick="showTab('municipal')" data-he="מוניציפלי / עירוני" data-en="Municipal / Urban">מוניציפלי / עירוני</button>
-      <button class="tab-btn" onclick="showTab('commercial')" data-he="מסחרי / תעשייתי" data-en="Commercial / Industrial">מסחרי / תעשייתי</button>
-      <button class="tab-btn" onclick="showTab('fleet')" data-he="ליווי קציני רכב" data-en="Fleet Officers">ליווי קציני רכב</button>
+      <button class="tab-btn active" onclick="showTab('municipal', this)" data-he="מוניציפלי / עירוני" data-en="Municipal / Urban">מוניציפלי / עירוני</button>
+      <button class="tab-btn" onclick="showTab('commercial', this)" data-he="מסחרי / תעשייתי" data-en="Commercial / Industrial">מסחרי / תעשייתי</button>
+      <button class="tab-btn" onclick="showTab('fleet', this)" data-he="ליווי קציני רכב" data-en="Fleet Officers">ליווי קציני רכב</button>
     </div>
 
     <div id="tab-municipal" class="tab-content active">
@@ -611,12 +628,13 @@
     });
   }
 
-  function showTab(tab) {
-    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.getElementById('tab-' + tab).classList.add('active');
-    event.target.classList.add('active');
-  }
+ function showTab(tab, el) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+
+  document.getElementById('tab-' + tab).classList.add('active');
+  el.classList.add('active');
+}
 
   // Scroll animations
   const obs = new IntersectionObserver(entries => {
