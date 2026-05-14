@@ -643,24 +643,44 @@
     bottom:22px;
     left:22px;
     z-index:99999;
-    width:58px;
-    height:58px;
-    border-radius:50%;
-    border:1px solid rgba(255,255,255,.25);
-    background:linear-gradient(135deg,#1565C0,#2196F3);
+    width:62px;
+    height:62px;
+    border-radius:18px;
+    border:1px solid rgba(0,180,216,.55);
+    background:
+      radial-gradient(circle at 30% 20%, rgba(255,255,255,.25), transparent 35%),
+      linear-gradient(135deg,#0D1B2E,#1565C0 55%,#00B4D8);
     color:#fff;
-    font-size:27px;
     cursor:pointer;
-    box-shadow:0 10px 30px rgba(0,0,0,.45);
+    box-shadow:
+      0 12px 32px rgba(0,0,0,.45),
+      0 0 22px rgba(33,150,243,.35);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+
+  .accessibility-floating-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:
+      0 16px 38px rgba(0,0,0,.5),
+      0 0 28px rgba(0,180,216,.55);
+  }
+
+  .accessibility-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
 
   .accessibility-panel{
     display:none;
     position:fixed;
-    bottom:92px;
+    bottom:96px;
     left:22px;
     z-index:99999;
-    width:260px;
+    width:270px;
     background:rgba(13,27,46,.98);
     color:#fff;
     border:1px solid rgba(33,150,243,.35);
@@ -742,7 +762,11 @@
 </style>
 
 <button class="accessibility-floating-btn" id="accessibilityBtn" aria-label="פתח תפריט נגישות">
-  ♿
+  <span class="accessibility-icon">
+    <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true">
+      <path fill="currentColor" d="M12 2.5a2 2 0 1 1 0 4a2 2 0 0 1 0-4Zm8 5.5H4a1 1 0 0 0 0 2h5v3.2l-1.7 6.4a1 1 0 1 0 1.9.6l1.5-5.2h2.6l1.5 5.2a1 1 0 1 0 1.9-.6L15 13.2V10h5a1 1 0 1 0 0-2Z"/>
+    </svg>
+  </span>
 </button>
 
 <div class="accessibility-panel" id="accessibilityPanel" role="dialog" aria-label="תפריט נגישות">
