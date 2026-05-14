@@ -636,44 +636,130 @@
 
   </script>
 
-<!-- Simple Accessibility Menu -->
-<button id="accessibilityBtn" style="position:fixed;bottom:20px;left:20px;z-index:9999;background:#2196F3;color:white;border:none;border-radius:50%;width:56px;height:56px;font-size:26px;cursor:pointer;box-shadow:0 4px 18px rgba(0,0,0,.35);" aria-label="תפריט נגישות">♿</button>
-
-<div id="accessibilityMenu" style="display:none;position:fixed;bottom:86px;left:20px;z-index:9999;background:#111927;color:white;border:1px solid rgba(33,150,243,.4);border-radius:14px;padding:14px;width:230px;box-shadow:0 10px 30px rgba(0,0,0,.45);font-family:Heebo,Arial,sans-serif;text-align:right;">
-  <strong style="display:block;margin-bottom:10px;">תפריט נגישות</strong>
-  <button onclick="document.body.style.fontSize='120%'" style="width:100%;margin:4px 0;padding:8px;cursor:pointer;">הגדלת טקסט</button>
-  <button onclick="document.body.style.fontSize='100%'" style="width:100%;margin:4px 0;padding:8px;cursor:pointer;">איפוס טקסט</button>
-  <button onclick="document.body.classList.toggle('high-contrast')" style="width:100%;margin:4px 0;padding:8px;cursor:pointer;">ניגודיות גבוהה</button>
-  <button onclick="document.body.classList.toggle('stop-animations')" style="width:100%;margin:4px 0;padding:8px;cursor:pointer;">עצירת אנימציות</button>
-</div>
-
+<!-- Professional Accessibility Menu -->
 <style>
-.high-contrast {
-  background:#000 !important;
-  color:#fff !important;
-}
-.high-contrast * {
-  background-color:#000 !important;
-  color:#fff !important;
-  border-color:#fff !important;
-}
-.high-contrast a {
-  color:#00ffff !important;
-  text-decoration:underline !important;
-}
-.stop-animations *,
-.stop-animations *::before,
-.stop-animations *::after {
-  animation:none !important;
-  transition:none !important;
-}
+  .accessibility-floating-btn{
+    position:fixed;
+    bottom:22px;
+    left:22px;
+    z-index:99999;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.25);
+    background:linear-gradient(135deg,#1565C0,#2196F3);
+    color:#fff;
+    font-size:27px;
+    cursor:pointer;
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+  }
+
+  .accessibility-panel{
+    display:none;
+    position:fixed;
+    bottom:92px;
+    left:22px;
+    z-index:99999;
+    width:260px;
+    background:rgba(13,27,46,.98);
+    color:#fff;
+    border:1px solid rgba(33,150,243,.35);
+    border-radius:18px;
+    padding:16px;
+    box-shadow:0 16px 45px rgba(0,0,0,.5);
+    font-family:'Heebo',Arial,sans-serif;
+    text-align:right;
+  }
+
+  .accessibility-panel h3{
+    margin:0 0 12px;
+    font-size:1rem;
+    color:#fff;
+  }
+
+  .accessibility-panel button{
+    width:100%;
+    margin:5px 0;
+    padding:10px 12px;
+    border-radius:10px;
+    border:1px solid rgba(33,150,243,.25);
+    background:rgba(255,255,255,.06);
+    color:#fff;
+    font-family:'Heebo',Arial,sans-serif;
+    font-size:.92rem;
+    cursor:pointer;
+    text-align:right;
+  }
+
+  .accessibility-panel button:hover{
+    background:rgba(33,150,243,.22);
+  }
+
+  body.accessibility-large-text p,
+  body.accessibility-large-text li,
+  body.accessibility-large-text a,
+  body.accessibility-large-text span,
+  body.accessibility-large-text button{
+    font-size:115% !important;
+  }
+
+  body.accessibility-large-text h1,
+  body.accessibility-large-text h2,
+  body.accessibility-large-text h3,
+  body.accessibility-large-text h4{
+    font-size:125% !important;
+  }
+
+  body.accessibility-high-contrast,
+  body.accessibility-high-contrast *{
+    background:#000 !important;
+    color:#fff !important;
+    border-color:#fff !important;
+  }
+
+  body.accessibility-high-contrast a{
+    color:#00e5ff !important;
+    text-decoration:underline !important;
+  }
+
+  body.accessibility-links a{
+    text-decoration:underline !important;
+    outline:2px solid transparent;
+  }
+
+  body.accessibility-readable-font,
+  body.accessibility-readable-font *{
+    font-family:Arial, sans-serif !important;
+  }
+
+  body.accessibility-stop-animations *,
+  body.accessibility-stop-animations *::before,
+  body.accessibility-stop-animations *::after{
+    animation:none !important;
+    transition:none !important;
+    scroll-behavior:auto !important;
+  }
 </style>
 
+<button class="accessibility-floating-btn" id="accessibilityBtn" aria-label="פתח תפריט נגישות">
+  ♿
+</button>
+
+<div class="accessibility-panel" id="accessibilityPanel" role="dialog" aria-label="תפריט נגישות">
+  <h3>תפריט נגישות</h3>
+  <button type="button" onclick="document.body.classList.toggle('accessibility-large-text')">הגדלת טקסט</button>
+  <button type="button" onclick="document.body.classList.toggle('accessibility-high-contrast')">ניגודיות גבוהה</button>
+  <button type="button" onclick="document.body.classList.toggle('accessibility-links')">הדגשת קישורים</button>
+  <button type="button" onclick="document.body.classList.toggle('accessibility-readable-font')">פונט קריא</button>
+  <button type="button" onclick="document.body.classList.toggle('accessibility-stop-animations')">עצירת אנימציות</button>
+  <button type="button" onclick="document.body.className = document.body.className.replace(/accessibility-\S+/g, '').trim()">איפוס הגדרות</button>
+</div>
+
 <script>
-document.getElementById('accessibilityBtn').addEventListener('click', function () {
-  const menu = document.getElementById('accessibilityMenu');
-  menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
-});
+  document.getElementById('accessibilityBtn').addEventListener('click', function () {
+    const panel = document.getElementById('accessibilityPanel');
+    panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+  });
 </script>
 
 </body>
