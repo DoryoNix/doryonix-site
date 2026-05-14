@@ -272,8 +272,6 @@
   <div class="stat-item"><span class="stat-number">∞</span><span class="stat-label" data-he="שיתוף פעולה בין קבלנים" data-en="Multi-contractor integration">שיתוף פעולה בין קבלנים</span></div>
 </div>
 
-</div>
-
 <!-- WHAT WE DO -->
 <section id="whatwedo">
   <div class="section-inner">
@@ -319,8 +317,6 @@
   </div>
 </section>
 
-<!-- EXPERTISE -->
-<section id="expertise">
   
 <!-- EXPERTISE -->
 <section id="expertise">
@@ -546,8 +542,6 @@
   </div>
 </section>
 
-<!-- WHY -->
-<section id="why">
   
 <!-- WHY -->
 <section id="why">
@@ -585,6 +579,12 @@
 
 <footer>
   <p>© 2025 <span>Doryonix</span> Power &amp; Project Solution &nbsp;|&nbsp; <span data-he="כל הזכויות שמורות" data-en="All rights reserved">כל הזכויות שמורות</span></p>
+  <div style="margin-top:12px;">
+  <a href="#" onclick="openAccessibilityStatement(); return false;"
+     style="color:#4FC3F7;text-decoration:none;font-size:.85rem;">
+    הצהרת נגישות
+  </a>
+</div>
 </footer>
 
 <script>
@@ -784,5 +784,132 @@
   });
 </script>
 
+<!-- Accessibility Statement Modal -->
+<div id="accessibilityModal"
+     style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:999999;
+     align-items:center;justify-content:center;padding:20px;">
+
+  <div style="
+    width:min(900px,100%);
+    max-height:90vh;
+    overflow:auto;
+    background:#111927;
+    border:1px solid rgba(33,150,243,.25);
+    border-radius:20px;
+    padding:28px;
+    color:#EAF4FF;
+    font-family:'Heebo',Arial,sans-serif;
+    line-height:2;
+    position:relative;
+    box-shadow:0 20px 60px rgba(0,0,0,.55);
+  ">
+
+    <button onclick="closeAccessibilityStatement()"
+            style="
+              position:absolute;
+              top:14px;
+              left:14px;
+              width:36px;
+              height:36px;
+              border:none;
+              border-radius:50%;
+              background:#1E293B;
+              color:white;
+              cursor:pointer;
+              font-size:18px;
+            ">
+      ✕
+    </button>
+
+    <h2 style="margin-bottom:18px;color:#ffffff;">
+      הצהרת נגישות
+    </h2>
+
+    <p>
+      אתר Doryonix פועל במטרה להנגיש את שירותיו לכלל הציבור,
+      לרבות אנשים עם מוגבלויות.
+      אנו רואים חשיבות רבה במתן שירות שוויוני, מכבד, נגיש ונוח לכלל המשתמשים.
+    </p>
+
+    <p>
+      האתר נבנה תוך מאמץ לעמוד בדרישות תקנות שוויון זכויות לאנשים עם מוגבלות
+      (התאמות נגישות לשירות), התשע"ג–2013,
+      ובהתאם להמלצות התקן הישראלי 5568 המבוסס על WCAG 2.0 ברמת AA.
+    </p>
+
+    <h3 style="margin-top:24px;color:#ffffff;">
+      התאמות נגישות שבוצעו באתר
+    </h3>
+
+    <ul style="padding-right:20px;">
+      <li>התאמה לניווט באמצעות מקלדת.</li>
+      <li>שימוש בניגודיות צבעים משופרת.</li>
+      <li>אפשרות להגדלת טקסטים.</li>
+      <li>פונט קריא והתאמה למכשירים ניידים.</li>
+      <li>הוספת טקסט חלופי (ALT) לתמונות מרכזיות.</li>
+      <li>שימוש במבנה תוכן ברור וכותרות מסודרות.</li>
+      <li>אפשרות לעצירת אנימציות דרך תפריט הנגישות.</li>
+    </ul>
+
+    <h3 style="margin-top:24px;color:#ffffff;">
+      סייגים לנגישות
+    </h3>
+
+    <p>
+      למרות מאמצינו להנגיש את כלל חלקי האתר,
+      ייתכן ויתגלו חלקים שטרם הונגשו באופן מלא.
+      אנו ממשיכים לפעול לשיפור הנגישות כחלק ממחויבותנו לאפשר שימוש נגיש לכלל האוכלוסייה.
+    </p>
+
+    <h3 style="margin-top:24px;color:#ffffff;">
+      יצירת קשר בנושא נגישות
+    </h3>
+
+    <p>
+      במידה ונתקלת בבעיה בנושא נגישות באתר,
+      או אם יש לך הערה או בקשה,
+      ניתן ליצור קשר:
+    </p>
+
+    <div style="margin-top:14px;">
+      <strong>דור אוריון – Doryonix</strong><br>
+      אימייל:
+      <a href="mailto:Dor@doryonix.com"
+         style="color:#4FC3F7;text-decoration:none;">
+         Dor@doryonix.com
+      </a><br>
+
+      טלפון:
+      <a href="tel:0585555144"
+         style="color:#4FC3F7;text-decoration:none;">
+         058-5555144
+      </a>
+    </div>
+
+    <p style="margin-top:24px;">
+      תאריך עדכון אחרון:
+      15/05/2026
+    </p>
+
+  </div>
+</div>
+
+<script>
+  function openAccessibilityStatement() {
+    document.getElementById('accessibilityModal').style.display = 'flex';
+  }
+
+  function closeAccessibilityStatement() {
+    document.getElementById('accessibilityModal').style.display = 'none';
+  }
+
+  window.addEventListener('click', function(e) {
+    const modal = document.getElementById('accessibilityModal');
+    if (e.target === modal) {
+      closeAccessibilityStatement();
+    }
+  });
+</script>
+  
 </body>
 </html>
