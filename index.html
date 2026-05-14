@@ -636,20 +636,43 @@
 
   </script>
 
-<!-- Accessibility Widget -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bennyluk/Sienna-Accessibility-Widget/dist/sienna.min.css">
+<!-- Simple Accessibility Menu -->
+<button id="accessibilityBtn" style="position:fixed;bottom:20px;left:20px;z-index:9999;background:#2196F3;color:white;border:none;border-radius:50%;width:56px;height:56px;font-size:26px;cursor:pointer;box-shadow:0 4px 18px rgba(0,0,0,.35);" aria-label="תפריט נגישות">♿</button>
 
-<script src="https://cdn.jsdelivr.net/gh/bennyluk/Sienna-Accessibility-Widget/dist/sienna.min.js"></script>
+<div id="accessibilityMenu" style="display:none;position:fixed;bottom:86px;left:20px;z-index:9999;background:#111927;color:white;border:1px solid rgba(33,150,243,.4);border-radius:14px;padding:14px;width:230px;box-shadow:0 10px 30px rgba(0,0,0,.45);font-family:Heebo,Arial,sans-serif;text-align:right;">
+  <strong style="display:block;margin-bottom:10px;">תפריט נגישות</strong>
+  <button onclick="document.body.style.fontSize='120%'" style="width:100%;margin:4px 0;padding:8px;cursor:pointer;">הגדלת טקסט</button>
+  <button onclick="document.body.style.fontSize='100%'" style="width:100%;margin:4px 0;padding:8px;cursor:pointer;">איפוס טקסט</button>
+  <button onclick="document.body.classList.toggle('high-contrast')" style="width:100%;margin:4px 0;padding:8px;cursor:pointer;">ניגודיות גבוהה</button>
+  <button onclick="document.body.classList.toggle('stop-animations')" style="width:100%;margin:4px 0;padding:8px;cursor:pointer;">עצירת אנימציות</button>
+</div>
+
+<style>
+.high-contrast {
+  background:#000 !important;
+  color:#fff !important;
+}
+.high-contrast * {
+  background-color:#000 !important;
+  color:#fff !important;
+  border-color:#fff !important;
+}
+.high-contrast a {
+  color:#00ffff !important;
+  text-decoration:underline !important;
+}
+.stop-animations *,
+.stop-animations *::before,
+.stop-animations *::after {
+  animation:none !important;
+  transition:none !important;
+}
+</style>
 
 <script>
-window.addEventListener('load', function () {
-  if (typeof SiennaAccessibilityWidget !== 'undefined') {
-    new SiennaAccessibilityWidget({
-      position: 'bottom-left',
-      primaryColor: '#2196F3',
-      iconType: 'accessibility'
-    });
-  }
+document.getElementById('accessibilityBtn').addEventListener('click', function () {
+  const menu = document.getElementById('accessibilityMenu');
+  menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
 });
 </script>
 
