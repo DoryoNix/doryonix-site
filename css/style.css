@@ -971,3 +971,70 @@ body::after{
     transform:translate3d(2%, 1%, 0) scale(1.04);
   }
 }
+
+.control-section{
+  position:relative;
+  z-index:1;
+
+  padding:8rem 7%;
+}
+
+.control-grid{
+  margin-top:4rem;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+  gap:1.2rem;
+}
+
+.control-item{
+  padding:2rem 1.5rem;
+
+  border-radius:20px;
+
+  text-align:center;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.03),
+      rgba(255,255,255,.015)
+    );
+
+  border:1px solid rgba(255,255,255,.06);
+
+  transition:.3s ease;
+}
+
+.control-item:hover{
+  transform:translateY(-6px);
+
+  border-color:rgba(46,168,255,.18);
+}
+
+.control-icon{
+  font-size:2rem;
+
+  margin-bottom:1rem;
+}
+
+.control-item h4{
+  font-family:'Rajdhani',sans-serif;
+
+  font-size:1.15rem;
+
+  color:#fff;
+
+  margin-bottom:.6rem;
+}
+
+.control-item p{
+  color:#9FB0C4;
+
+  font-size:.88rem;
+
+  line-height:1.8;
+}
