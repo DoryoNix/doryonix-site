@@ -194,17 +194,19 @@ overflow:hidden;
    .hero h1{
   font-family:'Rajdhani',sans-serif;
 
-  font-size:clamp(3.4rem,7vw,6.5rem);
+  font-size:clamp(2.8rem,5.2vw,5rem);
 
   font-weight:700;
 
-  line-height:.95;
+  line-height:1.05;
 
   letter-spacing:.01em;
 
   color:#ffffff;
 
-  max-width:1100px;
+  max-width:1400px;
+
+  white-space:nowrap;
 
   opacity:0;
 
