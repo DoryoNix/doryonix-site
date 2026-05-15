@@ -206,7 +206,8 @@ overflow:hidden;
 
   max-width:1400px;
 
-  white-space:nowrap;
+  white-space:normal;
+}
 
   opacity:0;
 
