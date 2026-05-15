@@ -32,6 +32,17 @@
 
   transition:.3s ease;
 }
+.nav-logo img{
+  height:38px;
+  width:auto;
+  display:block;
+  object-fit:contain;
+}
+
+.nav-logo a{
+  display:flex;
+  align-items:center;
+}
     .nav-links{display:flex;gap:1.8rem;list-style:none}
   .nav-links a{
   position:relative;
