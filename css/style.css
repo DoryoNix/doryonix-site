@@ -548,33 +548,42 @@ section{
     cursor:pointer;
   }
 
-  .nav-links{
-    position:fixed;
+ .nav-links{
+  position:fixed;
+  top:86px;
+  right:-100%;
 
-    top:86px;
-    right:-100%;
+  width:82%;
+  height:calc(100vh - 86px);
 
-    width:82%;
-    height:calc(100vh - 86px);
+  background:rgba(5,15,30,.96);
+  backdrop-filter:blur(18px);
 
-    background:rgba(5,15,30,.96);
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
 
-    backdrop-filter:blur(18px);
+  padding:45px 24px;
+  gap:1.8rem;
 
-    flex-direction:column;
+  transition:.35s ease;
+  border-left:1px solid rgba(255,255,255,.06);
 
-    align-items:flex-start;
+  display:flex;
+  text-align:center;
+}
 
-    padding:40px 30px;
+.nav-links li{
+  width:100%;
+  text-align:center;
+}
 
-    gap:1.8rem;
-
-    transition:.35s ease;
-
-    border-left:1px solid rgba(255,255,255,.06);
-
-    display:flex;
-  }
+.nav-links a{
+  display:block;
+  width:100%;
+  font-size:1.15rem;
+  text-align:center;
+}
 
   .nav-links.open{
     right:0;
