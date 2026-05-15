@@ -598,3 +598,34 @@ section{
   }
 }
   </style>
+
+.final-cta{
+  position:relative;
+  z-index:1;
+  padding:7rem 7%;
+  text-align:center;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(46,168,255,.12), transparent 45%),
+    rgba(255,255,255,.015);
+  border-top:1px solid rgba(255,255,255,.06);
+}
+
+.final-cta-inner{
+  max-width:850px;
+  margin:0 auto;
+}
+
+.final-cta h2{
+  font-family:'Rajdhani',sans-serif;
+  font-size:clamp(2.3rem,4vw,4.4rem);
+  line-height:1.05;
+  color:#fff;
+  margin-bottom:1.4rem;
+}
+
+.final-cta p{
+  color:#9FB0C4;
+  font-size:1.05rem;
+  line-height:2;
+  margin-bottom:2.4rem;
+}
