@@ -181,15 +181,15 @@ overflow:hidden;
   animation:fadeUp .8s .2s forwards;
 }
    .hero-logo{
-  width:320px;
-
-  max-width:80vw;
+  width:360px;
+  max-width:82vw;
 
   margin-bottom:2.8rem;
 
   opacity:0;
 
   animation:fadeUp .8s .4s forwards;
+
 }
    .hero h1{
   font-family:'Rajdhani',sans-serif;
