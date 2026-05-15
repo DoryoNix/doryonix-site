@@ -523,6 +523,9 @@ section{
       .process-visual{position:static}
       .tab-content.active{grid-template-columns:1fr}
     }
+.menu-toggle{
+  display:none;
+}
    @media(max-width:680px){
 
   .menu-toggle{
