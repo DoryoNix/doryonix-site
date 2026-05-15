@@ -812,3 +812,138 @@ section{
 
   font-size:.92rem;
 }
+
+.footer-premium{
+  position:relative;
+
+  padding:5rem 7% 2rem;
+
+  border-top:1px solid rgba(255,255,255,.06);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.015),
+      rgba(255,255,255,.03)
+    );
+}
+
+.footer-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+  gap:3rem;
+
+  margin-bottom:3rem;
+}
+
+.footer-brand img{
+  width:170px;
+
+  margin-bottom:1.2rem;
+}
+
+.footer-brand p{
+  color:#9FB0C4;
+
+  line-height:1.9;
+
+  max-width:320px;
+}
+
+.footer-title{
+  font-family:'Rajdhani',sans-serif;
+
+  font-size:1.1rem;
+
+  color:#fff;
+
+  margin-bottom:1.2rem;
+}
+
+.footer-links{
+  display:flex;
+
+  flex-direction:column;
+
+  gap:.8rem;
+}
+
+.footer-links a{
+  color:#9FB0C4;
+
+  text-decoration:none;
+
+  transition:.25s ease;
+}
+
+.footer-links a:hover{
+  color:#fff;
+}
+
+.footer-contact{
+  display:flex;
+
+  flex-direction:column;
+
+  gap:.9rem;
+
+  color:#9FB0C4;
+}
+
+.footer-bottom{
+  padding-top:2rem;
+
+  border-top:1px solid rgba(255,255,255,.06);
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  gap:1rem;
+
+  flex-wrap:wrap;
+}
+
+.footer-copy{
+  color:#7E8EA3;
+
+  font-size:.88rem;
+}
+
+.footer-social{
+  display:flex;
+
+  gap:1rem;
+}
+
+.footer-social a{
+  width:42px;
+  height:42px;
+
+  border-radius:12px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  text-decoration:none;
+
+  background:rgba(255,255,255,.04);
+
+  border:1px solid rgba(255,255,255,.06);
+
+  color:#fff;
+
+  transition:.25s ease;
+}
+
+.footer-social a:hover{
+  transform:translateY(-3px);
+
+  border-color:rgba(46,168,255,.25);
+}
