@@ -44,3 +44,7 @@
     el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
     obs.observe(el);
   });
+
+function toggleMenu(){
+  document.querySelector('.nav-links').classList.toggle('open');
+}
