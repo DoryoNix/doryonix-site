@@ -39,7 +39,7 @@
 }
 
 .nav-logo img{
-  height:42px;
+  height:28px;
   width:auto;
 
   display:block;
@@ -50,6 +50,8 @@
 .nav-logo a{
   display:flex;
   align-items:center;
+ max-width:160px;
+overflow:hidden;
 }
     .nav-links{display:flex;gap:1.8rem;list-style:none}
   .nav-links a{
