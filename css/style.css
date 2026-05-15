@@ -49,7 +49,7 @@
 }
 
 .nav-logo img{
-  width:140px;
+  width:220px;
   height:auto;
   display:block;
   object-fit:contain;
@@ -58,7 +58,7 @@
 .nav-logo a{
   display:flex;
   align-items:center;
- max-width:160px;
+ max-width:240px;
 overflow:hidden;
 }
     .nav-links{display:flex;gap:1.8rem;list-style:none}
