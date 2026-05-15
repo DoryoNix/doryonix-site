@@ -38,6 +38,7 @@
   flex-shrink:0;
   width:150px;
   overflow:hidden;
+ margin-right: 18px;
 }
 
 .nav-logo img{
