@@ -721,3 +721,94 @@ section{
 
   font-size:.92rem;
 }
+
+.home-nav-section{
+  position:relative;
+  z-index:1;
+
+  padding:8rem 7%;
+}
+
+.home-nav-grid{
+  margin-top:4rem;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+  gap:1.5rem;
+}
+
+.home-nav-card{
+  position:relative;
+
+  padding:2.4rem;
+
+  border-radius:24px;
+
+  overflow:hidden;
+
+  text-decoration:none;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.03),
+      rgba(255,255,255,.015)
+    );
+
+  border:1px solid rgba(255,255,255,.06);
+
+  transition:.35s ease;
+
+  backdrop-filter:blur(14px);
+}
+
+.home-nav-card:hover{
+  transform:translateY(-8px);
+
+  border-color:rgba(46,168,255,.22);
+}
+
+.home-nav-icon{
+  width:68px;
+  height:68px;
+
+  border-radius:18px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin-bottom:1.6rem;
+
+  font-size:1.7rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(46,168,255,.16),
+      rgba(46,168,255,.05)
+    );
+
+  border:1px solid rgba(46,168,255,.14);
+}
+
+.home-nav-card h3{
+  font-family:'Rajdhani',sans-serif;
+
+  font-size:1.45rem;
+
+  color:#fff;
+
+  margin-bottom:.8rem;
+}
+
+.home-nav-card p{
+  color:#9FB0C4;
+
+  line-height:1.9;
+
+  font-size:.92rem;
+}
