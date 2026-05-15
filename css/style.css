@@ -180,8 +180,10 @@ overflow:hidden;
   opacity:0;
   animation:fadeUp .8s .2s forwards;
 }
-    .hero-logo{
-  width:min(220px,42vw);
+   .hero-logo{
+  width:320px;
+
+  max-width:80vw;
 
   margin-bottom:2.8rem;
 
