@@ -629,3 +629,95 @@ section{
   line-height:2;
   margin-bottom:2.4rem;
 }
+
+.trust-section{
+  position:relative;
+  z-index:1;
+
+  padding:8rem 7%;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.015),
+      rgba(255,255,255,.03)
+    );
+}
+
+.trust-grid{
+  margin-top:4rem;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+  gap:1.5rem;
+}
+
+.trust-card{
+  padding:2rem;
+
+  border-radius:22px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.03),
+      rgba(255,255,255,.015)
+    );
+
+  border:1px solid rgba(255,255,255,.06);
+
+  transition:.3s ease;
+
+  backdrop-filter:blur(12px);
+}
+
+.trust-card:hover{
+  transform:translateY(-6px);
+
+  border-color:rgba(46,168,255,.18);
+}
+
+.trust-icon{
+  width:62px;
+  height:62px;
+
+  border-radius:18px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin-bottom:1.5rem;
+
+  font-size:1.5rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(46,168,255,.16),
+      rgba(46,168,255,.05)
+    );
+
+  border:1px solid rgba(46,168,255,.12);
+}
+
+.trust-card h3{
+  font-family:'Rajdhani',sans-serif;
+
+  font-size:1.3rem;
+
+  margin-bottom:.8rem;
+
+  color:#fff;
+}
+
+.trust-card p{
+  color:#9FB0C4;
+
+  line-height:1.9;
+
+  font-size:.92rem;
+}
