@@ -1099,3 +1099,12 @@ body::after{
 
   transform:translateY(-3px);
 }
+
+.article-title{
+  width:100%;
+  max-width:none;
+  text-align:center;
+  margin-inline:auto;
+  white-space:nowrap;
+  font-size:clamp(2rem,3.2vw,3.8rem);
+}
