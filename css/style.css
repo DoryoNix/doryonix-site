@@ -1178,3 +1178,35 @@ body::after{
   font-size:1.05rem;
   line-height:1.5;
 }
+
+.breadcrumbs{
+  display:flex;
+
+  justify-content:center;
+
+  gap:.7rem;
+
+  flex-wrap:wrap;
+
+  margin-bottom:2rem;
+
+  font-size:.92rem;
+
+  color:#7F92A8;
+}
+
+.breadcrumbs a{
+  color:#7F92A8;
+
+  text-decoration:none;
+
+  transition:.3s ease;
+}
+
+.breadcrumbs a:hover{
+  color:#2EA8FF;
+}
+
+.breadcrumb-separator{
+  opacity:.45;
+}
