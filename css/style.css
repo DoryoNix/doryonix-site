@@ -615,7 +615,7 @@ margin-inline:auto;
 }
 
 .final-cta-inner{
-  max-width:850px;
+  max-width:1300px;
   margin:0 auto;
 }
 
@@ -632,6 +632,7 @@ margin-inline:auto;
 
 .final-cta h2 span{
   display:block;
+  white-space:nowrap;
 }
 
 .final-cta p{
