@@ -1131,3 +1131,50 @@ body::after{
   }
 
 }
+.related-articles{
+  margin-top:5rem;
+  padding-top:3rem;
+  border-top:1px solid rgba(255,255,255,.06);
+}
+
+.related-articles h3{
+  font-family:'Rajdhani',sans-serif;
+  font-size:2rem;
+  color:#fff;
+  margin-bottom:2rem;
+}
+
+.related-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1.2rem;
+}
+
+.related-card{
+  display:block;
+  padding:1.6rem;
+  border-radius:18px;
+  text-decoration:none;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.06);
+  transition:.3s ease;
+}
+
+.related-card:hover{
+  transform:translateY(-5px);
+  border-color:rgba(46,168,255,.22);
+}
+
+.related-card span{
+  display:block;
+  color:#2EA8FF;
+  font-size:.8rem;
+  letter-spacing:.16em;
+  margin-bottom:.7rem;
+}
+
+.related-card strong{
+  color:#fff;
+  font-size:1.05rem;
+  line-height:1.5;
+}
