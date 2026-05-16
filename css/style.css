@@ -1243,9 +1243,21 @@ body::after{
 }
 
 .hero-bess{
-  background:
-    linear-gradient(rgba(5,15,30,.78),rgba(5,15,30,.9)),
-    url('../images/bess-bg.jpg') center/cover no-repeat;
+  background-image:
+    linear-gradient(rgba(5,15,30,.76),rgba(5,15,30,.9)),
+    url('../assets/bess-bg.jpg.png');
+
+  background-size:
+    cover,
+    cover;
+
+  background-position:
+    center,
+    center;
+
+  background-repeat:
+    no-repeat,
+    no-repeat;
 }
 
 .hero-budget{
