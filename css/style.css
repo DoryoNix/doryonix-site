@@ -208,7 +208,6 @@ overflow:hidden;
   width:100%;
   max-width:1900px;
  text-wrap:balance;
-  white-space:nowrap;
   text-align:center;
   margin:0 auto;
   opacity:0;
@@ -628,6 +627,7 @@ margin-inline:auto;
   margin:0 auto 1.4rem;
   max-width:1200px;
   text-align:center;
+ white-space:normal;
 }
 
 .final-cta h2 span{
