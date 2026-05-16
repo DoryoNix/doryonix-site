@@ -1222,3 +1222,64 @@ body::after{
 .featured-articles{
   padding-top:2rem;
 }
+
+.hero-ev,
+.hero-bess,
+.hero-budget,
+.hero-grid,
+.hero-contractors,
+.hero-supervision,
+.hero-solar,
+.hero-fleet{
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.hero-ev{
+  background:
+    linear-gradient(rgba(5,15,30,.78),rgba(5,15,30,.9)),
+    url('../images/ev-bg.jpg') center/cover no-repeat;
+}
+
+.hero-bess{
+  background:
+    linear-gradient(rgba(5,15,30,.78),rgba(5,15,30,.9)),
+    url('../images/bess-bg.jpg') center/cover no-repeat;
+}
+
+.hero-budget{
+  background:
+    linear-gradient(rgba(5,15,30,.82),rgba(5,15,30,.92)),
+    url('../images/budget-bg.jpg') center/cover no-repeat;
+}
+
+.hero-grid{
+  background:
+    linear-gradient(rgba(5,15,30,.78),rgba(5,15,30,.9)),
+    url('../images/grid-bg.jpg') center/cover no-repeat;
+}
+
+.hero-contractors{
+  background:
+    linear-gradient(rgba(5,15,30,.8),rgba(5,15,30,.92)),
+    url('../images/contractors-bg.jpg') center/cover no-repeat;
+}
+
+.hero-supervision{
+  background:
+    linear-gradient(rgba(5,15,30,.8),rgba(5,15,30,.92)),
+    url('../images/supervision-bg.jpg') center/cover no-repeat;
+}
+
+.hero-solar{
+  background:
+    linear-gradient(rgba(5,15,30,.76),rgba(5,15,30,.88)),
+    url('../images/solar-bg.jpg') center/cover no-repeat;
+}
+
+.hero-fleet{
+  background:
+    linear-gradient(rgba(5,15,30,.78),rgba(5,15,30,.9)),
+    url('../images/fleet-bg.jpg') center/cover no-repeat;
+}
