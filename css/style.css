@@ -200,27 +200,17 @@ overflow:hidden;
 }
 .hero h1{
   font-family:'Rajdhani',sans-serif;
-
-  font-size:clamp(2.8rem,5.2vw,5rem);
-
+  font-size:clamp(2.2rem,4vw,4.2rem);
   font-weight:700;
-
   line-height:1.05;
-
   letter-spacing:.01em;
-
   color:#ffffff;
-
-  max-width:1400px;
-
+  width:100%;
+  max-width:1600px;
   white-space:nowrap;
-
   text-align:center;
-
-  margin-inline:auto;
-
+  margin:0 auto;
   opacity:0;
-
   animation:fadeUp .8s .6s forwards;
 }
 
