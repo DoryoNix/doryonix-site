@@ -630,6 +630,10 @@ margin-inline:auto;
   text-align:center;
 }
 
+.final-cta h2 span{
+  display:block;
+}
+
 .final-cta p{
   color:#9FB0C4;
   font-size:1.05rem;
