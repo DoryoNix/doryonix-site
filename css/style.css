@@ -1113,3 +1113,21 @@ body::after{
   white-space:nowrap;
   font-size:clamp(2rem,3.2vw,3.8rem);
 }
+@media(max-width:768px){
+
+  .section-title,
+  .article-title,
+  .hero h1{
+
+    white-space:normal;
+
+    text-align:center;
+
+    margin-inline:auto;
+
+    width:100%;
+
+    line-height:1.15;
+  }
+
+}
