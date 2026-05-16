@@ -1043,3 +1043,59 @@ body::after{
 
   line-height:1.8;
 }
+
+.article-content{
+  max-width:900px;
+
+  margin:4rem auto 0;
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:1.8rem;
+}
+
+.article-content p{
+  color:#B7C4D6;
+
+  line-height:2.15;
+
+  font-size:1.02rem;
+}
+
+.article-content h3{
+  font-family:'Rajdhani',sans-serif;
+
+  font-size:1.8rem;
+
+  color:#fff;
+
+  margin-top:2rem;
+
+  margin-bottom:.4rem;
+}
+
+.btn-outline{
+  width:fit-content;
+
+  padding:1rem 1.6rem;
+
+  border-radius:14px;
+
+  border:1px solid rgba(46,168,255,.22);
+
+  color:#fff;
+
+  text-decoration:none;
+
+  transition:.3s ease;
+
+  margin-top:1rem;
+}
+
+.btn-outline:hover{
+  background:rgba(46,168,255,.08);
+
+  transform:translateY(-3px);
+}
