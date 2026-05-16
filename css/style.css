@@ -1257,7 +1257,7 @@ body::after{
 .hero-grid{
   background:
     linear-gradient(rgba(5,15,30,.78),rgba(5,15,30,.9)),
-    url('../images/grid-bg.jpg') center/cover no-repeat;
+  url('../assets/grid-bg.jpg.png')
 }
 
 .hero-contractors{
