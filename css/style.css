@@ -1210,3 +1210,6 @@ body::after{
 .breadcrumb-separator{
   opacity:.45;
 }
+.featured-articles{
+  padding-top:2rem;
+}
