@@ -198,7 +198,7 @@ overflow:hidden;
   animation:fadeUp .8s .4s forwards;
 
 }
-   .hero h1{
+.hero h1{
   font-family:'Rajdhani',sans-serif;
 
   font-size:clamp(2.8rem,5.2vw,5rem);
@@ -213,7 +213,15 @@ overflow:hidden;
 
   max-width:1400px;
 
-  white-space:normal;
+  white-space:nowrap;
+
+  text-align:center;
+
+  margin-inline:auto;
+
+  opacity:0;
+
+  animation:fadeUp .8s .6s forwards;
 }
 
   opacity:0;
