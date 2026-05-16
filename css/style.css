@@ -1114,11 +1114,13 @@ body::after{
 
 .article-title{
   width:100%;
-  max-width:none;
+  max-width:1400px;
   text-align:center;
   margin-inline:auto;
-  white-space:nowrap;
-  font-size:clamp(2rem,3.2vw,3.8rem);
+  white-space:normal;
+  text-wrap:balance;
+  line-height:1.15;
+  font-size:clamp(2rem,3vw,3.7rem);
 }
 @media(max-width:768px){
 
