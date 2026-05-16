@@ -293,7 +293,8 @@ section{
 }
 .section-title{
   font-family:'Rajdhani',sans-serif;
-
+text-align:center;
+margin-inline:auto;
   font-size:clamp(2.4rem,4vw,4rem);
  white-space:nowrap;
  font-weight:700;
