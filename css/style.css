@@ -1255,9 +1255,21 @@ body::after{
 }
 
 .hero-grid{
-  background:
+  background-image:
     linear-gradient(rgba(5,15,30,.78),rgba(5,15,30,.9)),
-    url('../assets/grid-bg.jpg.png') center/cover no-repeat;
+    url('../assets/grid-bg.jpg.png');
+
+  background-size:
+    cover,
+    cover;
+
+  background-position:
+    center,
+    center;
+
+  background-repeat:
+    no-repeat,
+    no-repeat;
 }
 
 .hero-contractors{
