@@ -221,21 +221,15 @@ overflow:hidden;
   animation:fadeUp .8s .6s forwards;
 }
   .hero-tagline{
-  font-size:clamp(1rem,2vw,1.18rem);
-
-  color:#9FB0C4;
-
-  font-weight:300;
-
-  margin-top:2rem;
-
-  max-width:760px;
+  font-size:1.32rem;
 
   line-height:2;
 
-  opacity:0;
+  max-width:1100px;
 
-  animation:fadeUp .8s .8s forwards;
+  color:#B7C4D6;
+
+  opacity:.95;
 }
     .hero-cta{display:flex;gap:1rem;margin-top:2.8rem;justify-content:center;flex-wrap:wrap;
       opacity:0;animation:fadeUp .8s 1s forwards}
@@ -1066,9 +1060,9 @@ body::after{
 .article-content p{
   color:#B7C4D6;
 
-  line-height:2.15;
+  line-height:2.3;
 
-  font-size:1.02rem;
+  font-size:1.18rem;
 }
 
 .article-content h3{
